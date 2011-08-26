@@ -1,5 +1,9 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+syntax off
+filetype off
+call pathogen#infect()
+filetype off
+syntax on
+filetype plugin indent on
 
 " An example for a vimrc file.
 "
