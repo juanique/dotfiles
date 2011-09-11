@@ -1,0 +1,5 @@
+#!/bin/bash
+export PATH=$PATH:~/bin
+export EDITOR=vim
+export VISUAL=vim
+export GIT_EDITOR=vim
