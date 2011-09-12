@@ -1,0 +1,18 @@
+Installation:
+
+    cd ~
+    git clone git://github.com/juanique99/dotfiles.git ~/dotfiles
+
+Create symlinks
+
+    ln -s ~/dotfiles/dotvim ~/.vim
+    ln -s ~/dotfiles/vimrc ~/.vimrc
+    ln -s ~/dotfiles/gvimrc ~/.gvimrc
+    ln -s ~/dotfiles/bashrc ~/.bashrc
+    ln -s ~/dotfiles/zshrc ~/.zshrc
+
+Load submodules
+
+    cd ~/.vim
+    git submodule init
+    git submodule update
