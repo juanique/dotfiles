@@ -10,7 +10,12 @@ Create symlinks
     ln -s ~/dotfiles/gvimrc ~/.gvimrc
     ln -s ~/dotfiles/bashrc ~/.bashrc
     ln -s ~/dotfiles/zshrc ~/.zshrc
+
+If you don't have a bin directory yourself, you should
+
     ln -s ~/dotfiles/bin ~/bin
+
+Otherwise, AT LEAST copy vcprompt to your personal scripts directory
 
 Load submodules
 

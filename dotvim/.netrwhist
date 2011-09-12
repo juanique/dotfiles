@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/juanique/Downloads/peepcode-037-advanced-cmd-code/advanced_bin'
 let g:netrw_dirhist_2='/home/juanique/Downloads/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles'
 let g:netrw_dirhist_3='/home/juanique/Downloads/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/bash'
+let g:netrw_dirhist_4='/home/juanique/dotfiles/bash'
+let g:netrw_dirhist_5='/home/juanique/wesync/media/js/views'
+let g:netrw_dirhist_6='/home/juanique/wesync/media/js/views/qa'
+let g:netrw_dirhist_7='/home/juanique/wesync/media/js/views'
+let g:netrw_dirhist_8='/home/juanique/wesync/media/js'
+let g:netrw_dirhist_9='/home/juanique/wesync/media/js/components'
