@@ -1,3 +1,13 @@
 [submodule "dotvim/bundle/vim-coffee-script"]
 	path = dotvim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "dotvim/bundle/jshint.vim.git"]
+	url = https://github.com/manalang/jshint.vim.git
+[submodule "dotvim/bundle/pyflakes"]
+	url = https://github.com/kevinw/pyflakes
+[submodule "dotvim/bundle/vim-haml"]
+	url = https://github.com/tpope/vim-haml
+[submodule "dotvim/bundle/vim-jade"]
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "dotvim/bundle/vim-pep8"]
+	url =  https://github.com/nvie/vim-pep8
