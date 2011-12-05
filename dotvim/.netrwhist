@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/juanique/wesync/media/js/components'
-let g:netrw_dirhist_2='/home/juanique/wesync/media/js/components/WeSync'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/juanique/back/9-final-no-server'
+let g:netrw_dirhist_2='/home/juanique/back/9-final-no-server/public'
+let g:netrw_dirhist_3='/home/juanique/back/9-final-no-server/public/js'
+let g:netrw_dirhist_4='/home/juanique/back2/1-models/app/coffeescripts/time_log'
+let g:netrw_dirhist_5='/home/juanique/back2/1-models/app/coffeescripts'
