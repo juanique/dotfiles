@@ -19,6 +19,6 @@ Otherwise, AT LEAST copy vcprompt to your personal scripts directory
 
 Load submodules
 
-    cd ~/.vim
+    cd ~/dotfiles
     git submodule init
     git submodule update
