@@ -2,7 +2,9 @@ autoload -U colors
 colors
 setopt prompt_subst
 PROMPT='
-%~ %{$fg_bold[black]%}$(vcprompt)$ %{$reset_color%}'
+%~ %{$fg_bold[black]%}$ %{$reset_color%}'
+
+#%~ %{$fg_bold[black]%}$(vcprompt)$ %{$reset_color%}' # with git
 
 # Set RPROMPT to have info show up on the right, too.
 
@@ -44,3 +46,6 @@ WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
 
 bindkey -e
 
+__git_files () {
+    _wanted files expl 'local files' _files
+}
