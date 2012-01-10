@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/juanique/.vim'
-let g:netrw_dirhist_2='/home/juanique/klooff-django/project'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/juanique/klooff-django/project/media/js/lib/SyntaxHighlighter'
+let g:netrw_dirhist_2='/home/juanique/klooff-django/project/media/js/lib'
+let g:netrw_dirhist_3='/home/juanique/klooff-django/project/media/js/lib/SyntaxHighlighter'
+let g:netrw_dirhist_4='/home/juanique/klooff-django'
+let g:netrw_dirhist_5='/home/juanique'
+let g:netrw_dirhist_6='/home/juanique/klooff-django/project/api/tests'

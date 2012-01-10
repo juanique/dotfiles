@@ -177,3 +177,6 @@ if has('statusline')
       set titlestring=%t%(\ [%R%M]%)
    endif
 endif 
+
+" 2-space indentation for coffeescript
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab tabstop=2
