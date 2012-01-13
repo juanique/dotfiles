@@ -180,3 +180,4 @@ endif
 
 " 2-space indentation for coffeescript
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab tabstop=2
+au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab tabstop=2
