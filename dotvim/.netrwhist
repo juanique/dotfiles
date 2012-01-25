@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/juanique/klooff-django/lib/tastytools/tastytools/api_doc/templates/api_doc'
+let g:netrw_dirhist_1='/home/juanique/klooff-django/project/templates'
 let g:netrw_dirhist_2='/home/juanique/klooff-django/project'
-let g:netrw_dirhist_3='/usr/lib/pymodules/python2.7/django/contrib/staticfiles'
+let g:netrw_dirhist_3='/home/juanique/klooff-django'
