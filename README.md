@@ -44,7 +44,15 @@ Load submodules
     git submodule init
     git submodule update
 
-The PEP8 plugin requires you to have installed the pytho PEP8 library you can install it using `pip`. I would also recomment you install `pylint` if you care about your code quality.
+###Temporary files
+
+Vim saves swap and backup files for every file you open. Using this config these are saved by default under `~/tmp/vim_bak`, we need to make sure this directory exists.
+
+    mkdir -p ~/tmp/vim_bak
+
+###Python
+
+The PEP8 plugin (checks code conventions) requires you to have installed the python PEP8 library, and the syntastic plugin (checks for syntax errors) requires `pyflakes` you can install both using `pip`. I would also recommend you install `pylint` if you care about code quality.
 
 If using Ubuntu you may install pip with `apt-get`
 
@@ -52,4 +60,17 @@ If using Ubuntu you may install pip with `apt-get`
 
 Then
 
-    sudo pip install pep8 pylint
+    sudo pip install pep8 pylint pyflakes
+
+
+###Command-T
+
+The Command-T plugin allows to quickly open files within your working directory, it requires you to have a ruby enabled VIM version such as vim-nox on ubuntu, if you have the default vim package installed you'll need to delete it.
+
+    sudo apt-get purge vim
+    sudo apt-get install vim-nox ruby rake rubygems ruby-dev
+
+Then you can build the plugin.
+
+    cd ~/dotfiles/dotvim/bundle/CommandT/
+    rake make

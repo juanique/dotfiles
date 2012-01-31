@@ -24,7 +24,18 @@ cd ~/dotfiles
 git submodule init
 git submodule update
 
+#Create tmp folder
+mkdir -p ~/tmp/vim_bak
+
 #Install pep8 and pylint
 
 sudo apt-get install python-pip
-sudo pip install pep8 pylint
+sudo pip install pep8 pylint pyflakes
+
+#Install ruby enabled vim
+sudo apt-get purge vim
+sudo apt-get install vim-nox ruby rake rubygems ruby-dev
+
+#build command-T plugin
+cd ~/dotfiles/dotvim/bundle/CommandT/
+rake make
