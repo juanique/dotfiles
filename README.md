@@ -1,6 +1,6 @@
 ##Get the code
 
-    git clone git://github.com/juanique/dotfiles.git ~/dotfiles
+    git clone https://github.com/juanique/dotfiles
 
 ##Quickstart
 
