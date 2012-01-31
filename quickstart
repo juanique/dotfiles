@@ -1,0 +1,30 @@
+#!/bin/bash
+
+rm -f ~/.vim
+rm -f ~/.vimrc
+rm -f ~/.gvimrc
+rm -f ~/.bashrc
+rm -f ~/.zshrc
+
+#Create symlinks
+
+ln -s ~/dotfiles/dotvim ~/.vim
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/dotfiles/bashrc ~/.bashrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
+
+ln -s ~/dotfiles/bin ~/bin
+
+~/dotfiles/bin/vcprompt-install
+
+#Load submodules
+
+cd ~/dotfiles
+git submodule init
+git submodule update
+
+#Install pep8 and pylint
+
+sudo apt-get install python-pip
+sudo pip install pep8 pylint
