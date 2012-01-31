@@ -36,7 +36,7 @@ You need to create the vcprompt program to display git information on your shell
 
     ~/dotfiles/bin/vcprompt-install
 
-Make sure the generated `vcprompt` its on your system's PATH.
+Make sure the generated `vcprompt` is on your system's PATH.
 
 Load submodules
 
