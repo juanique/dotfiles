@@ -25,3 +25,6 @@
 [submodule "dotvim/bundle/syntastic"]
 	path = dotvim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "dotvim/bundle/makegreen"]
+	path = dotvim/bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen

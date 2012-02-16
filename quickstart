@@ -27,10 +27,10 @@ git submodule update
 #Create tmp folder
 mkdir -p ~/tmp/vim_bak
 
-#Install pep8 and pylint
+#Install pep8 and pylint for syntax/convetion checks and nose for unit testing
 
 sudo apt-get install python-pip
-sudo pip install pep8 pylint pyflakes
+sudo pip install pep8 pylint pyflakes nose
 
 #Install ruby enabled vim
 sudo apt-get purge vim
