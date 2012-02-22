@@ -52,11 +52,11 @@ Vim saves swap and backup files for every file you open. Using this config these
 
 ###Python
 
-The PEP8 plugin (checks code conventions) requires you to have installed the python PEP8 library, and the syntastic plugin (checks for syntax errors) requires `pyflakes` you can install both using `pip`. I would also recommend you install `pylint` if you care about code quality.
+The PEP8 plugin (checks code conventions) requires you to have installed the python PEP8 library, and the syntastic plugin (checks for syntax errors) requires `pyflakes`. Also, `nose` is used to run unit tests,  you can install the three packages using `pip`. I would also recommend you install `pylint` if you care about code quality.
 
 If using Ubuntu you may install pip with `apt-get`
 
-    sudo apt-get install python-pip
+    sudo apt-get install python-pip nose
 
 Then
 

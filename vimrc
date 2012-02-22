@@ -185,3 +185,7 @@ au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab tabstop=2
 " Eclim mappings
 nnoremap <leader>d :JavaDocSearch -x declarations<cr>
 nnoremap <leader>i :JavaImport<cr>
+
+" makegreen conf
+autocmd BufNewFile,BufRead *.py compiler nose
+map <unique> <silent> <Leader>o :call MakeGreen()<cr>
