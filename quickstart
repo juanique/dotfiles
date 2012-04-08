@@ -5,6 +5,7 @@ rm -f ~/.vimrc
 rm -f ~/.gvimrc
 rm -f ~/.bashrc
 rm -f ~/.zshrc
+rm -f ~/.screenrc
 
 #Create symlinks
 
@@ -13,6 +14,7 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/screenrc ~/.screenrc
 
 ln -s ~/dotfiles/bin ~/bin
 

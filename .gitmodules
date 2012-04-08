@@ -31,3 +31,6 @@
 [submodule "dotvim/bundle/makegreen"]
 	path = dotvim/bundle/makegreen
 	url = https://github.com/reinh/vim-makegreen
+[submodule "dotvim/bundle/vim-less"]
+	path = dotvim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
