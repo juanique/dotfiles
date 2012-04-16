@@ -8,6 +8,10 @@ The quickstart command executes all the commands detailed on the Manual Installa
 
     ~/dotfiles/quickstart
 
+Mac users may want to run
+
+    ~/dotfiles/quickstart-mac
+
 ##Manual installation:
 
 Remove previous config files

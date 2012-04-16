@@ -1,0 +1,54 @@
+#!/bin/bash
+
+command -v hg >/dev/null 2>&1 || {
+  echo -e >&2 "Mercurial is required but it's not installed. You may want to:\n";
+  echo >&2 "/usr/bin/ruby -e \"\$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)\";";
+  echo >&2 "brew update"
+  echo >&2 "brew doctor"
+  echo -e >&2 "brew -v install -d hg \n"
+  echo >&2 "Aborting.";
+  exit 1;
+}
+
+#Install pep8 and pylint for syntax/convetion checks and nose for unit testing
+
+sudo easy_install pip
+sudo pip install pep8 pylint pyflakes nose
+
+#Remove old config files
+rm -f ~/.vim
+rm -f ~/.vimrc
+rm -f ~/.gvimrc
+rm -f ~/.bashrc
+rm -f ~/.zshrc
+rm -f ~/.screenrc
+
+#Create symlinks
+
+ln -s ~/dotfiles/dotvim ~/.vim
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/dotfiles/bashrc ~/.bashrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/screenrc ~/.screenrc
+
+ln -s ~/dotfiles/bin ~/bin
+
+~/dotfiles/bin/vcprompt-install
+
+#Load submodules
+
+cd ~/dotfiles
+git submodule init
+git submodule update
+
+#Create tmp folder
+mkdir -p ~/tmp/vim_bak
+
+#ruby rake rubygems ruby-dev
+
+#build command-T plugin
+cd ~/dotfiles/dotvim/bundle/CommandT/
+rake make
+
+touch ~/.profile

@@ -15,13 +15,14 @@ alias vi='vim'
 
 # Some shortcuts for different directory listings
 # alias dir='ls --format=vertical'
-alias dir='ls -G' 
+alias dir='ls -G'
 alias ll='ls -l'                              # long list
 
 # Colors!
 alias vim='vim -T xterm-color'
 alias ls='ls -G'
-alias ll='ls -lh --color'
+alias ll='ls -lh'
+#alias ll='ls -lh --color' is this necessary? -not in Mac, maybe in ubuntu?
 
 function take() { 
     mkdir -p "$1"
