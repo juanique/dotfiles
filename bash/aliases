@@ -22,7 +22,7 @@ alias ll='ls -l'                              # long list
 alias vim='vim -T xterm-color'
 alias ls='ls -G'
 alias ll='ls -lh'
-#alias ll='ls -lh --color' is this necessary? -not in Mac, maybe in ubuntu?
+alias ll='ls -lh --color'
 
 function take() { 
     mkdir -p "$1"
