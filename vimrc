@@ -139,6 +139,7 @@ set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_highlighting = 2
+let g:syntastic_python_checkers=['flake8']
 " let g:syntastic_quiet_warnings=1
 
 " highlight tabs and trailing spaces
@@ -189,3 +190,7 @@ nnoremap <leader>i :JavaImport<cr>
 " makegreen conf
 autocmd BufNewFile,BufRead *.py compiler nose
 map <unique> <silent> <Leader>o :call MakeGreen()<cr>
+
+" Command-T
+set wildignore+=*.pyc
+set wildignore+=env/
