@@ -34,3 +34,6 @@
 [submodule "dotvim/bundle/vim-less"]
 	path = dotvim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "dotvim/bundle/vim-golang"]
+	path = dotvim/bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git

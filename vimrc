@@ -183,6 +183,11 @@ endif
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab tabstop=2
 au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab tabstop=2
 
+" go stuff
+au Filetype go setl tabstop=4 noexpandtab listchars=tab:\ \ ,trail:-
+autocmd BufWritePre *.go Fmt
+
+
 " Eclim mappings
 nnoremap <leader>d :JavaDocSearch -x declarations<cr>
 nnoremap <leader>i :JavaImport<cr>
@@ -194,3 +199,14 @@ map <unique> <silent> <Leader>o :call MakeGreen()<cr>
 " Command-T
 set wildignore+=*.pyc
 set wildignore+=env/
+
+" Dont remember what is this
+if has("terminfo")
+    let &t_Co=16
+    let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
+    let &t_AF="\<Esc>[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm"
+else
+    let &t_Co=16
+    let &t_Sf="\<Esc>[3%dm"
+    let &t_Sb="\<Esc>[4%dm"
+endif
