@@ -187,6 +187,7 @@ au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab tabstop=2
 au Filetype go setl tabstop=4 noexpandtab listchars=tab:\ \ ,trail:-
 autocmd BufWritePre *.go Fmt
 
+set pastetoggle=<F2>
 
 " Eclim mappings
 nnoremap <leader>d :JavaDocSearch -x declarations<cr>
@@ -199,14 +200,77 @@ map <unique> <silent> <Leader>o :call MakeGreen()<cr>
 " Command-T
 set wildignore+=*.pyc
 set wildignore+=env/
+set wildignore+=*.jpg,*.png,*.gif,*.pdf
+set wildignore+=_darcs,.git,.hg
+set wildignore+=blib,_build
+set wildignore+=*.gz,*.bz2
+set wildignore+=*.bak
+set wildignore+=cpan
+set wildignore+=*.class,*.jar
+set wildignore+=*.odt
+let g:CommandTBackspaceMap=['<BS>', '<C-h>']
+hi CommandTSelection term=NONE cterm=NONE ctermfg=white ctermbg=59
 
-" Dont remember what is this
-if has("terminfo")
-    let &t_Co=16
-    let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
-    let &t_AF="\<Esc>[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm"
-else
-    let &t_Co=16
-    let &t_Sf="\<Esc>[3%dm"
-    let &t_Sb="\<Esc>[4%dm"
-endif
+" 256 color terminal
+set t_Co=256
+
+" lightline
+let g:lightline = {
+      \ 'mode_map': { 'c': 'NORMAL' },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \ },
+      \ 'component_function': {
+      \   'modified': 'MyModified',
+      \   'readonly': 'MyReadonly',
+      \   'fugitive': 'MyFugitive',
+      \   'filename': 'MyFilename',
+      \   'fileformat': 'MyFileformat',
+      \   'filetype': 'MyFiletype',
+      \   'fileencoding': 'MyFileencoding',
+      \   'mode': 'MyMode',
+      \ },
+      \ 'separator': { 'left': '⮀', 'right': '⮂' },
+      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ }
+
+function! MyModified()
+  return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+endfunction
+
+function! MyReadonly()
+  return &ft !~? 'help\|vimfiler\|gundo' && &readonly ? '⭤' : ''
+endfunction
+
+function! MyFilename()
+  return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() : 
+        \  &ft == 'unite' ? unite#get_status_string() : 
+        \  &ft == 'vimshell' ? vimshell#get_status_string() :
+        \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
+        \ ('' != MyModified() ? ' ' . MyModified() : '')
+endfunction
+
+function! MyFugitive()
+  if &ft !~? 'vimfiler\|gundo' && exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? '⭠ '._ : ''
+  endif
+  return ''
+endfunction
+
+function! MyFileformat()
+  return winwidth('.') > 70 ? &fileformat : ''
+endfunction
+
+function! MyFiletype()
+  return winwidth('.') > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
+endfunction
+
+function! MyFileencoding()
+  return winwidth('.') > 70 ? (strlen(&fenc) ? &fenc : &enc) : ''
+endfunction
+
+function! MyMode()
+  return winwidth('.') > 60 ? lightline#mode() : ''
+endfunction
