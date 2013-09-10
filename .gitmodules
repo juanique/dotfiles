@@ -37,3 +37,6 @@
 [submodule "dotvim/bundle/vim-golang"]
 	path = dotvim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "dotvim/bundle/lightline"]
+	path = dotvim/bundle/lightline
+	url = https://github.com/itchyny/lightline.vim.git
