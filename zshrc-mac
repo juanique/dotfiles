@@ -1,5 +1,6 @@
 . ~/dotfiles/zsh/config
 . ~/dotfiles/zsh/aliases
+. ~/dotfiles/bash/aliases-mac
 . ~/dotfiles/bash/env
 . ~/.profile
 

@@ -2,7 +2,7 @@ autoload -U colors
 colors
 setopt prompt_subst
 PROMPT='
-%~ %{$fg_bold[black]%}$(git-current-branch)$ %{$reset_color%}' # with git
+%~ %{$fg_bold[red]%}$(git-current-branch)$ %{$reset_color%}' # with git
 
 #%~ %{$fg_bold[black]%}$ %{$reset_color%}'
 

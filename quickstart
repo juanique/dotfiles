@@ -39,6 +39,10 @@ sudo pip install pep8 pylint pyflakes nose flake8
 sudo apt-get purge vim
 sudo apt-get install vim-nox ruby rake rubygems ruby-dev
 
-#build command-T plugin
+#RVM
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+#build command-T plugin - this may cause a segfault depending on the ruby version
+#see http://blog.hugeaim.com/2012/05/03/fix-command-t-segv-fault-in-vim/ to fix
 cd ~/dotfiles/dotvim/bundle/CommandT/
 rake make

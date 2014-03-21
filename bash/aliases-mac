@@ -1,0 +1,6 @@
+#!/bin/bash
+
+unalias vim
+unalias ll
+
+alias ll='ls -l'

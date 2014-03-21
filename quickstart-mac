@@ -1,15 +1,5 @@
 #!/bin/bash
 
-command -v hg >/dev/null 2>&1 || {
-  echo -e >&2 "Mercurial is required but it's not installed. You may want to:\n";
-  echo >&2 "/usr/bin/ruby -e \"\$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)\";";
-  echo >&2 "brew update"
-  echo >&2 "brew doctor"
-  echo -e >&2 "brew -v install -d hg \n"
-  echo >&2 "Aborting.";
-  exit 1;
-}
-
 #Install pep8 and pylint for syntax/convetion checks and nose for unit testing
 
 sudo easy_install pip
@@ -29,7 +19,7 @@ ln -s ~/dotfiles/dotvim ~/.vim
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/zshrc-mac ~/.zshrc
 ln -s ~/dotfiles/screenrc ~/.screenrc
 
 ln -s ~/dotfiles/bin ~/bin
@@ -45,9 +35,11 @@ git submodule update
 #Create tmp folder
 mkdir -p ~/tmp/vim_bak
 
-#ruby rake rubygems ruby-dev
+#RVM
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-#build command-T plugin
+#build command-T plugin - this may cause a segfault depending on the ruby version
+#see http://blog.hugeaim.com/2012/05/03/fix-command-t-segv-fault-in-vim/ to fix
 cd ~/dotfiles/dotvim/bundle/CommandT/
 rake make
 

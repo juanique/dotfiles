@@ -2,3 +2,4 @@ dotvim/.netrwhist
 dotvim/plugin
 dotvim/eclim
 bin/vcprompt
+.DS_Store
