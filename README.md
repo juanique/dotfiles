@@ -12,6 +12,10 @@ Mac users may want to run
 
     ~/dotfiles/quickstart-mac
 
+## VIM color scheme
+
+This config uses the solarized color scheme, you need to setup your terminal to use the solarized colors. Check the `color-schemes/`directory for color schemes for different terminal emulators.
+
 ##Manual installation:
 
 Remove previous config files
