@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
 #Install pep8 and pylint for syntax/convetion checks and nose for unit testing
 
 sudo easy_install pip
@@ -44,3 +47,6 @@ cd ~/dotfiles/dotvim/bundle/CommandT/
 rake make
 
 touch ~/.profile
+
+#Nodejs
+brew install node
