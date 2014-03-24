@@ -214,7 +214,7 @@ hi CommandTSelection term=NONE cterm=NONE ctermfg=white ctermbg=59
 " 256 color terminal
 set t_Co=256
 
-let g:airline_powerline_fonts = 1 
+let g:airline_powerline_fonts = 1
 set background=dark
 " let g:solarized_termcolors=256
 colorscheme solarized
