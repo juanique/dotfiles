@@ -1,2 +1,4 @@
 [color]
 	ui = true
+[difftool]
+	prompt = false
