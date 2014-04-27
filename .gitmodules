@@ -19,9 +19,9 @@
 [submodule "dotvim/bundle/supertab"]
 	path = dotvim/bundle/supertab
 	url = https://github.com/ervandew/supertab
-[submodule "dotvim/bundle/CommandT"]
-	path = dotvim/bundle/CommandT
-	url = https://github.com/wincent/Command-T.git
+[submodule "dotvim/bundle/ctrlp"]
+	path = dotvim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "dotvim/bundle/syntastic"]
 	path = dotvim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -44,5 +44,5 @@
 	path = dotvim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "dotvim/bundle/vim-localvimrc"]
-        path = dotvim/bundle/vim-localvimrc
-        url = https://github.com/embear/vim-localvimrc.git
+	path = dotvim/bundle/vim-localvimrc
+	url = https://github.com/embear/vim-localvimrc.git

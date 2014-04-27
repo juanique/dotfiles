@@ -208,8 +208,18 @@ set wildignore+=*.bak
 set wildignore+=cpan
 set wildignore+=*.class,*.jar
 set wildignore+=*.odt
+set wildignore+=*/node_modules/*
+set wildignore+=*/bower_components/*
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 let g:CommandTBackspaceMap=['<BS>', '<C-h>']
 hi CommandTSelection term=NONE cterm=NONE ctermfg=white ctermbg=59
+
+" Ctrlp
+let g:ctrlp_map = "<leader>t"
 
 " 256 color terminal
 set t_Co=256
