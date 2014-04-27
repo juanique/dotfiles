@@ -44,5 +44,5 @@
 	path = dotvim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "dotvim/bundle/vim-localvimrc"]
-        path = dotvim/bundle/vim-localvimrc
-        url = https://github.com/embear/vim-localvimrc.git
+	path = dotvim/bundle/vim-localvimrc
+	url = https://github.com/embear/vim-localvimrc.git
