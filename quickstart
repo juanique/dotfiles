@@ -36,7 +36,7 @@ sudo apt-get install -y python-pip
 sudo pip install pep8 pylint pyflakes nose flake8
 
 #Install ruby enabled vim
-sudo apt-get purge vim ruby
+sudo apt-get purge -y vim ruby
 
 # Ruby
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
