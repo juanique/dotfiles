@@ -208,8 +208,10 @@ set wildignore+=*.bak
 set wildignore+=cpan
 set wildignore+=*.class,*.jar
 set wildignore+=*.odt
+set wildignore+=*/node_modules/*
+set wildignore+=*/bower_components/*
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
