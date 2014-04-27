@@ -218,3 +218,6 @@ let g:airline_powerline_fonts = 1
 set background=dark
 " let g:solarized_termcolors=256
 colorscheme solarized
+
+# local vimrc
+let g:localvimrc_ask=0
