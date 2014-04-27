@@ -8,12 +8,11 @@ rm -f ~/.zshrc
 rm -f ~/.screenrc
 
 #Create symlinks
-
 ln -s ~/dotfiles/dotvim ~/.vim
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
-#ln -s ~/dotfiles/bashrc ~/.bashrc # not working correctly, using zsh
+# ln -s ~/dotfiles/bashrc ~/.bashrc # not working correctly, using zsh
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/screenrc ~/.screenrc
 
@@ -22,7 +21,6 @@ ln -s ~/dotfiles/bin ~/bin
 ~/dotfiles/bin/vcprompt-install
 
 #Load submodules
-
 cd ~/dotfiles
 git submodule init
 git submodule update
@@ -35,23 +33,7 @@ mkdir -p ~/tmp/vim_bak
 sudo apt-get install -y python-pip
 sudo pip install pep8 pylint pyflakes nose flake8
 
-#Install ruby enabled vim
-sudo apt-get purge -y vim ruby
-
-# Ruby
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-sudo apt-get install -y vim-nox
-
-
-sudo gem install rake
-
-#build command-T plugin - this may cause a segfault depending on the ruby version
-#see http://blog.hugeaim.com/2012/05/03/fix-command-t-segv-fault-in-vim/ to fix
-cd ~/dotfiles/dotvim/bundle/CommandT/
-rake make
-
 #nodejs
-
 sudo apt-get update
 sudo apt-get install -y python-software-properties python g++ make
 sudo add-apt-repository ppa:chris-lea/node.js
