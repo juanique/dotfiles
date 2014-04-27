@@ -36,11 +36,14 @@ sudo apt-get install -y python-pip
 sudo pip install pep8 pylint pyflakes nose flake8
 
 #Install ruby enabled vim
-sudo apt-get purge vim
-sudo apt-get install -y vim-nox ruby rake rubygems ruby-dev node
+sudo apt-get purge vim ruby
 
-#RVM
+# Ruby
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
+sudo apt-get install -y vim-nox
+
+
+sudo gem install rake
 
 #build command-T plugin - this may cause a segfault depending on the ruby version
 #see http://blog.hugeaim.com/2012/05/03/fix-command-t-segv-fault-in-vim/ to fix
@@ -53,4 +56,4 @@ sudo apt-get update
 sudo apt-get install -y python-software-properties python g++ make
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
