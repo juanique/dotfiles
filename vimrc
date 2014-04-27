@@ -219,5 +219,5 @@ set background=dark
 " let g:solarized_termcolors=256
 colorscheme solarized
 
-# local vimrc
+" local vimrc
 let g:localvimrc_ask=0
