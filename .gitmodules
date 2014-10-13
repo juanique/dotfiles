@@ -1,48 +1,64 @@
 [submodule "dotvim/bundle/vim-coffee-script"]
 	path = dotvim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+	branch = master
 [submodule "https://github.com/yejianye/jshint.vim.git"]
 	path = dotvim/bundle/jshint.vim
 	url = https://github.com/yejianye/jshint.vim.git
+	branch = master
 [submodule "dotvim/bundle/pyflakes"]
 	path = dotvim/bundle/pyflakes
 	url = https://github.com/kevinw/pyflakes
+	branch = master
 [submodule "dotvim/bundle/vim-haml"]
 	path = dotvim/bundle/vim-haml
 	url = https://github.com/tpope/vim-haml
+	branch = master
 [submodule "dotvim/bundle/vim-jade"]
 	path = dotvim/bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
+	branch = master
 [submodule "dotvim/bundle/vim-pep8"]
 	path = dotvim/bundle/vim-pep8
 	url =  https://github.com/nvie/vim-pep8
+	branch = master
 [submodule "dotvim/bundle/supertab"]
 	path = dotvim/bundle/supertab
 	url = https://github.com/ervandew/supertab
+	branch = master
 [submodule "dotvim/bundle/ctrlp"]
 	path = dotvim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+	branch = master
 [submodule "dotvim/bundle/syntastic"]
 	path = dotvim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+	branch = master
 [submodule "dotvim/bundle/fugitive"]
 	path = dotvim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+	branch = master
 [submodule "dotvim/bundle/makegreen"]
 	path = dotvim/bundle/makegreen
 	url = https://github.com/reinh/vim-makegreen
+	branch = master
 [submodule "dotvim/bundle/vim-less"]
 	path = dotvim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+	branch = master
 [submodule "dotvim/bundle/vim-golang"]
 	path = dotvim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+	branch = master
 [submodule "dotvim/bundle/vim-airline"]
 	path = dotvim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+	branch = master
 [submodule "dotvim/bundle/vim-colors-solarized"]
 	path = dotvim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+	branch = master
 [submodule "dotvim/bundle/vim-localvimrc"]
 	path = dotvim/bundle/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
+	branch = master
