@@ -231,3 +231,6 @@ colorscheme solarized
 
 " local vimrc
 let g:localvimrc_ask=0
+
+" easymotion
+let g:EasyMotion_leader_key = 'aa'

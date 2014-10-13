@@ -62,3 +62,7 @@
 	path = dotvim/bundle/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
 	branch = master
+[submodule "dotvim/bundle/vim-easymotion"]
+	path = dotvim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+	branch = master
